@@ -1,3 +1,5 @@
+## modifies configuration to make the workflow compatible with NeSI Mahuika cluster
+
 # Human variation workflow
 
 This repository contains a [nextflow](https://www.nextflow.io/) workflow
