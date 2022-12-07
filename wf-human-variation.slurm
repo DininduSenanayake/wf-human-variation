@@ -12,7 +12,6 @@
 module purge
 module load Nextflow/22.10.3
 module load Singularity/3.10.3
-module load Miniconda3
 
 export SINGULARITY_TMPDIR='/nesi/nobackup/nesi99999/Dinindu/ZDissues/wf-human-variation/singularity_tmpcache'
 export SINGULARITY_CACHEDIR=$SINGULARITY_TMPDIR
