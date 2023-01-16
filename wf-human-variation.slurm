@@ -7,8 +7,6 @@
 #SBATCH --time 01:00:00
 #SBATCH --output /nesi/nobackup/nesi99999/Dinindu/ZDissues/wf-human-variation/slurmout/%j.%x.out
 
-
-
 module purge
 module load Nextflow/22.10.3
 module load Singularity/3.10.3
