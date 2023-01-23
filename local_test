@@ -10,7 +10,7 @@ export SINGULARITY_CACHEDIR=$SINGULARITY_TMPDIR
 export NXF_EXECUTOR=slurm
 export NXF_SINGULARITY_CACHEDIR=/nesi/nobackup/nesi99999/Dinindu/ZDissues/wf-human-variation/singularity_tmpcache
 
-DEMO_DATA='/nesi/nobackup/nesi99999/Dinindu/ZDissues/wf-hv-demo_data'
+
 MODEL='/nesi/nobackup/nesi99999/Dinindu/ZDissues/wf-hv-demo_data/ont_r104_e81_sup_g5015'
 REFERENCE='nesi/nobackup/nesi99999/Dinindu/ZDissues/wf-hv-demo_data/demo.fasta'
 TDREPETS='/nesi/nobackup/nesi99999/Dinindu/ZDissues/wf-hv-demo_data/human_GRCh38_no_alt_analysis_set.trf.bed'
