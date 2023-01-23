@@ -122,7 +122,7 @@ workflow {
 
     // Dummy optional file
     // TODO should be a channel?
-    OPTIONAL = file("$projectDir/data/OPTIONAL_FILE")
+    OPTIONAL = file("data/OPTIONAL_FILE")
 
     // Create ref index if required
     if (!ref_index_fp || !ref_index_fp.exists()) {
@@ -184,7 +184,7 @@ workflow {
 
         if(default_bed_set) {
             // wf-human-snp uses OPTIONAL_FILE for empty bed for legacy reasons
-            snp_bed = Channel.fromPath("${projectDir}/data/OPTIONAL_FILE", checkIfExists: true)
+            snp_bed = Channel.fromPath("data/OPTIONAL_FILE", checkIfExists: true)
         }
         else {
             snp_bed = bed
@@ -196,7 +196,7 @@ workflow {
         }
         else {
             // map basecalling model to clair3 model
-            lookup_table = Channel.fromPath("${projectDir}/data/clair3_models.tsv", checkIfExists: true)
+            lookup_table = Channel.fromPath("data/clair3_models.tsv", checkIfExists: true)
             clair3_model = lookup_clair3_model(lookup_table, params.basecaller_cfg)
         }
 
